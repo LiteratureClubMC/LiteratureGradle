@@ -11,7 +11,7 @@ repositories {
 
 }
 minecraft{
-    version = "0.2.1-alpha"
+    version = "0.2.3-alpha"
 }
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))

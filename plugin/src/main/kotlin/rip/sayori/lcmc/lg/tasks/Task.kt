@@ -11,7 +11,9 @@ abstract class Task : DefaultTask() {
         val tasks = HashMap<String,Class<out Task>>()
 
         init {
-            tasks.put("setupDeobfWorkspace",SetupDeobfWorkspace::class.java)
+            tasks["setupDeobfWorkspace"] = SetupDeobfWorkspace::class.java
+            tasks["applyAT"] = ApplyAT::class.java
+            //tasks["toMCPNames"] = ToMCPNames::class.java
         }
     }
 }
